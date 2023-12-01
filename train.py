@@ -22,8 +22,8 @@ import transformers
 import utils
 from torch.utils.data import Dataset
 from transformers import Trainer
-import deepspeed
-deepspeed.ops.op_builder.CPUAdamBuilder().load()
+# import deepspeed
+# deepspeed.ops.op_builder.CPUAdamBuilder().load()
 
 IGNORE_INDEX = -100
 DEFAULT_PAD_TOKEN = "[PAD]"
