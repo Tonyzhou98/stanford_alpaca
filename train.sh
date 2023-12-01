@@ -5,7 +5,7 @@
 #SBATCH --gres=gpu:4
 
 
-torchrun --master_port=1 --nproc_per_node=4 train.py \
+torchrun --master_port=29500 --nproc_per_node=4 train.py \
     --model_name_or_path /afs/shell.umd.edu/project/aiwie-prj/user/tonyzhou/llama-2-7b-hf/ \
     --data_path ./alpaca_data.json \
     --bf16 True \
